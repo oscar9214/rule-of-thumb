@@ -1,6 +1,6 @@
 # rule-of-thumb
 
-You can see the project running in this url:
+You can see the project running in this url: https://oscar9214.github.io/rule-of-thumb/
 
 
 ## Project setup
