@@ -8,5 +8,6 @@ module.exports = {
         `
       }
     }
-  }
+  },
+  publicPath: '/rule-of-thumb/'
 };

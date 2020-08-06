@@ -1,5 +1,8 @@
 # rule-of-thumb
 
+You can see the project running in this url:
+
+
 ## Project setup
 ```
 npm install
