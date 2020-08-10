@@ -1,4 +1,6 @@
-# rule-of-thumb
+# Rule of thumb
+
+This was developed using Vuejs and SASS. All the data is retrieved from a json object, and then it's persisted on the browser's localstorage to keep and retrieve the app state after refreshing.
 
 You can see the project running in this url: https://oscar9214.github.io/rule-of-thumb/
 
