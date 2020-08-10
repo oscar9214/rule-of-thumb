@@ -20,7 +20,6 @@
              :button="secondAlert.button"
              :backgroundImage="secondAlert.backgroundImage"
       />
-      <Separator />
     </div>
   </div>
 </template>
@@ -30,12 +29,10 @@
 import Hero from "@/components/Hero.vue";
 import Votes from "@/components/Votes.vue";
 import Alert from "@/components/Alert.vue";
-import Separator from "../components/Separator";
 
 export default {
   name: "Home",
   components: {
-    Separator,
     Hero,
     Votes,
     Alert,

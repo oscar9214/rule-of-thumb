@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Separator />
     <div class="footer" >
       <div class="footer__left-container">
         <a href="">Terms and conditions</a>
@@ -16,8 +17,10 @@
 </template>
 
 <script>
+import Separator from "./Separator";
 export default {
   name: "Footer",
+  components: { Separator },
   data() {
     return {
       facebookIcon: this.getAssetUrl('assets/facebook-logo.svg'),
