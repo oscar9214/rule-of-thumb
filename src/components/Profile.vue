@@ -196,12 +196,8 @@ export default {
     }
 
     &__vote-now {
-      background: none;
-      border: 2px white solid;
-      padding: 10px 20px;
+      border-color: white;
       color: white;
-      font-size: 16px;
-      cursor: pointer;
     }
 
     &__date {

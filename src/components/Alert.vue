@@ -1,17 +1,22 @@
 <template>
-  <div class="alert" v-show="showAlert" :style="{ backgroundImage: image }">
+  <div class="alert" v-show="showAlert">
+    <div class="alert__image" :style="{ backgroundImage: `url(${backgroundImage}` }"></div>
     <div class="alert__text-container">
-      <div class="alert__title">
+      <div class="alert__title" :class="{ 'regular': !titleStrong }">
         {{ title }}
         <strong >{{ titleStrong }}</strong>
       </div>
-      <div class="alert__message">
+      <div class="alert__message" v-show="message">
         {{ message }}
       </div>
+      <button v-if="button" class="alert__button">
+        {{ button }}
+      </button>
     </div>
-    <div class="alert__close" @click="hideAlert">
+    <div v-if="!button" class="alert__close" @click="hideAlert">
       <img src="/assets/close.svg" alt="">
     </div>
+
   </div>
 </template>
 
@@ -23,7 +28,7 @@ export default {
     titleStrong: String,
     message: String,
     button: String,
-    image: String
+    backgroundImage: String
   },
   data() {
     return {
@@ -45,6 +50,14 @@ export default {
     padding: 20px 45px 20px 25px;
     position: relative;
 
+    &__image {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      filter: opacity(.1);
+      background-position: center;
+    }
+
     &__text-container {
       display: flex;
       align-items: center;
@@ -61,6 +74,10 @@ export default {
       font-size: 24px;
       font-weight: 300;
       margin-bottom: 15px;
+
+      &.regular {
+        font-weight: 500;
+      }
 
       strong {
         font-size: 36px;
@@ -94,6 +111,18 @@ export default {
 
       img {
         height: 15px;
+      }
+    }
+
+    &__button {
+      border-color: $color-gray;
+      font-weight: 500;
+      position: relative;
+      margin: 0 auto;
+
+      @include media-breakpoint-up(md) {
+        margin-left: auto;
+        margin-right: unset;
       }
     }
   }

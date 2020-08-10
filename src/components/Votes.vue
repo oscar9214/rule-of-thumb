@@ -51,8 +51,8 @@ export default {
             date: 1594072111000,
             category: 'Entertainment',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt',
-            likes: 64,
-            dislikes: 36,
+            likes: 3,
+            dislikes: 10,
             id: 1,
             image: '/assets/kanye.jpg'
           },

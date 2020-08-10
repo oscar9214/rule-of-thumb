@@ -2,6 +2,7 @@
   <div id="app">
     <Navigation />
     <router-view />
+    <Footer />
   </div>
 </template>
 
@@ -50,10 +51,19 @@
     align-items: center;
     justify-content: center;
   }
+
+  button {
+    background: none;
+    border: 2px white solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 </style>
 <script>
   import Navigation from "./components/Navigation";
+  import Footer from "./components/Footer";
   export default {
-    components: { Navigation }
+    components: { Footer, Navigation }
   };
 </script>
