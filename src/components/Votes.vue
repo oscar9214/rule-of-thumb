@@ -54,7 +54,7 @@ export default {
             likes: 3,
             dislikes: 10,
             id: 1,
-            image: '/assets/kanye.jpg'
+            image: this.getAssetUrl('assets/kanye.jpg')
           },
           {
             name: 'Mark Zuckerberg',
@@ -64,7 +64,7 @@ export default {
             likes: 36,
             dislikes: 64,
             id: 2,
-            image: '/assets/Mark.jpg'
+            image: this.getAssetUrl('assets/Mark.jpg')
           },
           {
             name: 'Cristina Fernandez de Kirchner',
@@ -74,7 +74,7 @@ export default {
             likes: 36,
             dislikes: 64,
             id: 3,
-            image: '/assets/Cristina.jpg'
+            image: this.getAssetUrl('assets/Cristina.jpg')
           },
           {
             name: 'Malala Yousafzai',
@@ -84,7 +84,7 @@ export default {
             likes: 64,
             dislikes: 36,
             id: 4,
-            image: '/assets/malala.jpg'
+            image: this.getAssetUrl('assets/malala.jpg')
           },
         ]
       }

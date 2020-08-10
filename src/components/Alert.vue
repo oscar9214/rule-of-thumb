@@ -14,7 +14,7 @@
       </button>
     </div>
     <div v-if="!button" class="alert__close" @click="hideAlert">
-      <img src="/assets/close.svg" alt="">
+      <img :src="closeIcon" alt="">
     </div>
 
   </div>
@@ -32,7 +32,8 @@ export default {
   },
   data() {
     return {
-      showAlert: true
+      showAlert: true,
+      closeIcon: this.getAssetUrl('assets/close.svg'),
     }
   },
   methods: {

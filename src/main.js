@@ -4,6 +4,11 @@ import router from "./router";
 import "./filters/filters";
 
 Vue.config.productionTip = false;
+Vue.mixin({
+  methods: {
+    getAssetUrl: path => (process.env.BASE_URL || '/') + path
+  }
+});
 
 new Vue({
   router,

@@ -8,8 +8,8 @@
       </div>
       <div class="footer__right-container">
         <span>Follow Us</span>
-        <img src="/assets/facebook-logo.svg" alt="">
-        <img src="/assets/twitter.svg" alt="">
+        <img :src="facebookIcon" alt="">
+        <img :src="twitterIcon" alt="">
       </div>
     </div>
   </div>
@@ -17,7 +17,13 @@
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
+  data() {
+    return {
+      facebookIcon: this.getAssetUrl('assets/facebook-logo.svg'),
+      twitterIcon: this.getAssetUrl('assets/twitter.svg'),
+    }
+  }
 };
 </script>
 

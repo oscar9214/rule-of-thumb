@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       hero: {
-        image: '/assets/pope-francis.jpg',
+        image: this.getAssetUrl('assets/pope-francis.jpg'),
         label: 'What’s your opinion on',
         title: 'Pope Francis?',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt purus sed dui consequat ornare. Vestibulum non ante sed est varius tincidunt. Maecenas ac turpis molestie, tincidunt ipsum eget, sodales urna. Nunc ultrices tellus sem, a malesuada elit scelerisque a. Nunc ac magna et tellus lobortis dapibus quis at lorem.',
@@ -59,7 +59,7 @@ export default {
       secondAlert: {
         title: 'Is there anyone else you would want us to add?',
         button: 'Submit a name',
-        backgroundImage: '/assets/backgroundpeople.jpg'
+        backgroundImage: this.getAssetUrl('assets/backgroundpeople.jpg')
       }
     }
   }

@@ -3,7 +3,7 @@
     <div class="profile__text-container">
       <h4 class="profile__title">
         <div class="profile__title__status" :class="{ 'like': isLikeHigher, 'dislike': !isLikeHigher}">
-          <img src="/assets/like.svg" alt="">
+          <img :src="likeIcon" alt="">
         </div>
         {{ profile.name }}
       </h4>
@@ -15,10 +15,10 @@
       </div>
       <div class="profile__controls">
         <div v-show="showLikeControls" class="profile__controls__like swipe" :class="{ 'selected': like, 'bounce-5': showLikeBounce, 'swipe-out': !showDescription }" @click="setLike">
-          <img src="/assets/like.svg" alt="">
+          <img :src="likeIcon" alt="">
         </div>
         <div v-show="showLikeControls" class="profile__controls__dislike swipe" :class="{ 'selected': dislike, 'bounce-5': showDislikeBounce, 'swipe-out': !showDescription }" @click="setDislike">
-          <img src="/assets/like.svg" alt="">
+          <img :src="likeIcon" alt="">
         </div>
         <button class="profile__vote-now" @click="sendVote">
           {{ buttonText }}
@@ -29,10 +29,10 @@
     </div>
     <div class="profile__stats">
       <div class="profile__stats__like" :style="{ width: likesWidth }">
-        <img src="/assets/like.svg" alt=""> {{ likesWidth }}
+        <img :src="likeIcon" alt=""> {{ likesWidth }}
       </div>
       <div class="profile__stats__dislike" :style="{ width: dislikesWidth }">
-        {{ dislikesWidth }} <img src="/assets/like.svg" alt="">
+        {{ dislikesWidth }} <img :src="likeIcon" alt="">
       </div>
     </div>
   </div>
@@ -52,7 +52,8 @@ export default {
       showDescription: true,
       showLikeBounce: false,
       showDislikeBounce: false,
-      showLikeControls: true
+      showLikeControls: true,
+      likeIcon: this.getAssetUrl('assets/like.svg'),
     }
   },
   computed: {

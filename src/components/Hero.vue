@@ -13,7 +13,7 @@
         </div>
 
         <div class="hero__more-info">
-          <a :href="wikiLink" target="_blank" class="hero__more-info__link"><img src="/assets/wikipedia.svg" alt=""> More Information</a>
+          <a :href="wikiLink" target="_blank" class="hero__more-info__link"><img :src="wikipediaIcon" alt=""> More Information</a>
         </div>
 
         <div class="hero__last-section">
@@ -21,10 +21,10 @@
         </div>
         <div class="hero__voting-container">
           <div class="hero__like">
-            <img src="/assets/like.svg" alt="">
+            <img :src="likeIcon" alt="">
           </div>
           <div class="hero__dislike">
-            <img src="/assets/like.svg" alt="">
+            <img :src="likeIcon" alt="">
           </div>
         </div>
       </div>
@@ -58,6 +58,12 @@ export default {
     lastSection: String,
     closingDays: String,
     wikiLink: String
+  },
+  data() {
+    return{
+      likeIcon: this.getAssetUrl('assets/like.svg'),
+      wikipediaIcon: this.getAssetUrl('assets/wikipedia.svg'),
+    }
   },
   computed: {
     bgImage() {
