@@ -9,5 +9,5 @@ module.exports = {
       }
     }
   },
-  publicPath: '/rule-of-thumb/'
+  //publicPath: '/rule-of-thumb/'
 };
