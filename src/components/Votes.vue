@@ -51,8 +51,8 @@ export default {
             date: 1594072111000,
             category: 'Entertainment',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt',
-            likes: 3,
-            dislikes: 10,
+            likes: 1,
+            dislikes: 2,
             id: 1,
             image: this.getAssetUrl('assets/kanye.jpg')
           },
@@ -61,8 +61,8 @@ export default {
             date: 1591761782000,
             category: 'Business',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt',
-            likes: 36,
-            dislikes: 64,
+            likes: 2,
+            dislikes: 1,
             id: 2,
             image: this.getAssetUrl('assets/Mark.jpg')
           },
@@ -71,8 +71,8 @@ export default {
             date: 1588996982000,
             category: 'Politics',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt',
-            likes: 36,
-            dislikes: 64,
+            likes: 3,
+            dislikes: 9,
             id: 3,
             image: this.getAssetUrl('assets/Cristina.jpg')
           },
@@ -81,8 +81,8 @@ export default {
             date: 1586404982000,
             category: 'Entertainment',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt',
-            likes: 64,
-            dislikes: 36,
+            likes: 10,
+            dislikes: 11,
             id: 4,
             image: this.getAssetUrl('assets/malala.jpg')
           },

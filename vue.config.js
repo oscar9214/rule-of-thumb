@@ -9,5 +9,5 @@ module.exports = {
       }
     }
   },
-  publicPath: '/rule-of-thumb/'
+  publicPath: process.env.NODE_ENV === 'production' ? '/rule-of-thumb/' : '/'
 };

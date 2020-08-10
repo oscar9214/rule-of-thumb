@@ -267,10 +267,16 @@ export default {
 
       &__like,
       &__dislike {
-        //width: 50%;
+        width: 1%;
         display: flex;
         align-items: center;
         font-size: 24px;
+        -webkit-transition: width .3s ease-in;
+        -moz-transition: width .3s ease-in;
+        -ms-transition: width .3s ease-in;
+        -o-transition: width .3s ease-in;
+        transition: width .3s ease-in;
+        min-width: 105px;
       }
 
       &__like {
